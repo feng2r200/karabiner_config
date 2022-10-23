@@ -188,7 +188,7 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "In mac keyboard, use right_command + k as Home key.",
+                                "description": "In mac keyboard, use right_command + k to change skhd mode.",
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -202,33 +202,14 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "home"
+                                        "key_code": "k",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
-                                "description": "In mac keyboard, use right_command + , as End key.",
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "end"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "In mac keyboard, use right_command + l as Pg Up key.",
+                                "description": "In mac keyboard, use right_command + l to change skhd mode.",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -242,15 +223,16 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "page_up"
+                                        "key_code": "l",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
-                                "description": "In mac keyboard, use right_command + . as Pg Down key.",
+                                "description": "In mac keyboard, use right_command + ; to change skhd mode.",
                                 "from": {
-                                    "key_code": "period",
+                                    "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
@@ -262,7 +244,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "page_down"
+                                        "key_code": "semicolon",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -283,26 +266,6 @@
                                 "to": [
                                     {
                                         "key_code": "delete_forward"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "In mac keyboard, use right_command + ; as BS key.",
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace"
                                     }
                                 ],
                                 "type": "basic"
